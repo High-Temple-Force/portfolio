@@ -1,0 +1,310 @@
+body {
+    width: 100%;
+    
+    margin: 0 0;
+    background-image: url("../image/background.jpg");
+    background-size: 100% auto;
+    background-attachment: fixed;
+    font-family: 'IM Fell DW Pica SC', serif;
+}
+
+#background {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+#about {
+    margin: 0 auto;
+    padding: 6rem 0;
+    width: 100%;
+    height: 250%;
+    background-color: rgba(255,255,255,0.8);   
+}
+
+
+
+#delfloat{
+    clear: both;
+}
+
+header {
+    background: rgba(255,255,255,0);
+    height: 5rem;
+    margin: 0 0;
+    position: fixed;
+    width: 100%;
+}
+
+#Aicon{
+    float: left;
+    width: 4rem;
+    height: 4rem;
+    margin: 0.5rem 1rem;
+}
+
+#login{
+    float: left;
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem 1rem;
+}
+
+#loginright{
+    width:10rem;
+    float: right;
+}
+
+#loginmsg{
+    padding: 20px 0px;
+    color: rgba(224, 216, 216, 0.4);
+}
+
+.right{
+    float:right;
+}
+
+
+#reshipi{
+    float:right;
+    width:5rem;
+}
+
+ul {
+    height: 100%;
+    float: left;
+    margin: 0rem 0px;
+    font-size: 1.2rem;
+}
+
+li {
+    height: 100%;
+    display: inline-block;
+    padding: 0 0px;
+    margin: 0 0px;
+    width: 10rem;
+    text-align: center;
+}
+
+li a {
+    color: rgba(122, 117, 117, 0.9);
+    display: block;
+    padding: 25px 0px;
+    text-emphasis: size after 1px; ;
+    text-decoration: none;
+}
+
+li :hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+#title {
+    margin: 0;
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(232, 241, 99);
+    
+
+}
+
+#container{
+    width: 100%;
+    height: 90%;
+    background-color: rgba(255,255,255,0);
+    margin: 0rem auto;
+    padding: 0 0;
+}
+
+#mainMessage{
+    padding: 25rem 6.5rem;
+    margin: 0rem 0;
+    font-size: 3.4rem;
+    color: rgba(221, 217, 217, 0.9);
+}
+
+.product{
+    width: 90%;
+    height: 35rem;
+    margin: 0 auto;
+    padding: 3rem 0;
+    background-color: rgba(255,255,255,0);
+}
+
+.namebox{
+    margin: 0 0 2rem 0rem;
+    padding: 0 0;
+    font-size: 3.5rem;
+    text-align: left;
+    width: 35%;
+    border-bottom: 
+    2px solid rgb(236, 158, 12);
+    float: left;
+}
+
+.explain{
+    margin: 0 0 2rem 0rem;
+    padding: 0 0;
+    font-size: 1rem;
+    text-align: left;
+    width: 35%;
+    float: left;
+}
+
+.btn_show{
+    font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+    text-align: center;
+    width: 35%;
+    padding: 0;
+    background: rgb(252, 250, 249);
+    float: left;
+}
+
+.show{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(241, 159, 64);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 0;
+    position: relative;
+    border: 2px solid rgb(241, 159, 64);
+    transition: .4s;
+}
+
+.show:hover {
+    border: 2px solid transparent;
+    color: #FFF;
+    background: rgb(241, 159, 64);
+}
+
+.show:before, .show:after {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    transform: scale(0);
+    transition: .2s;
+}
+
+.show:before {
+    border-bottom: 2px solid #FFF;
+    border-left: 2px solid #FFF;
+    transform-origin: 100% 0%;
+}
+  
+.show:after {
+    border-top: 2px solid #FFF;
+    border-right: 2px solid #FFF;
+    transform-origin: 0% 100%;
+}
+  
+.show:hover:after,
+.show:hover:before {
+    transform: scale(1);
+}
+
+.photo{
+    float:right;
+    width: 55%;
+}
+
+.cook_photo{
+    width: 100%;
+    height: auto;
+}
+
+.namebox_right{
+    margin: 0 0 2rem 0rem;
+    padding: 0 0;
+    font-size: 3.5rem;
+    text-align: left;
+    width: 35%;
+    border-bottom: 
+    2px solid rgb(236, 158, 12);
+    float: right;
+}
+
+.explain_right{
+    margin: 0 0 2rem 0rem;
+    padding: 0 0;
+    font-size: 1rem;
+    text-align: left;
+    width: 35%;
+    float: right;
+}
+
+.btn_show_right{
+    font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+    text-align: center;
+    width: 35%;
+    padding: 0;
+    background: rgb(252, 250, 249);
+    float: right;
+}
+
+.show{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(241, 159, 64);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 0;
+    position: relative;
+    border: 2px solid rgb(241, 159, 64);
+    transition: .4s;
+}
+
+.show:hover {
+    border: 2px solid transparent;
+    color: #FFF;
+    background: rgb(241, 159, 64);
+}
+
+.show:before, .show:after {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    transform: scale(0);
+    transition: .2s;
+}
+
+.show:before {
+    border-bottom: 2px solid #FFF;
+    border-left: 2px solid #FFF;
+    transform-origin: 100% 0%;
+}
+  
+.show:after {
+    border-top: 2px solid #FFF;
+    border-right: 2px solid #FFF;
+    transform-origin: 0% 100%;
+}
+  
+.show:hover:after,
+.show:hover:before {
+    transform: scale(1);
+}
+
+.photo_right{
+    float:left;
+    width: 55%;
+}
+
+.cook_photo_right{
+    width: 100%; 
+    height: auto;  
+}
