@@ -378,3 +378,8 @@ footer {
     background-color: orange;
     text-align: center;
 }
+
+.blog_article h3 {
+    width: 40%;
+    border-bottom: 1px solid rgba(241, 159, 64,0.5);
+}
