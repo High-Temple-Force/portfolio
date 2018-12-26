@@ -383,3 +383,14 @@ footer {
     width: 40%;
     border-bottom: 1px solid rgba(241, 159, 64,0.5);
 }
+
+.skills{
+    width:80%;
+    flex-basis:80%;
+    background-color: rgba(255, 165, 0, 0.1);
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
+    border: 1px solid rgba(241, 159, 64,0.5);
+    box-shadow:rgba(100, 99, 99, 0.51) 4px 4px 5px -4px;
+    float:left;
+}
