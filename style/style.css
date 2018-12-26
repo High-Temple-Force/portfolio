@@ -2,7 +2,7 @@ body {
     width: 100%;
     
     margin: 0 0;
-    background-image: url("../image/background.jpg");
+    background-color: rgba(255, 165, 0, 0.8);
     background-size: 100% auto;
     background-attachment: fixed;
     font-family: 'IM Fell DW Pica SC', serif;
@@ -19,7 +19,7 @@ body {
     margin: 0 auto;
     padding: 6rem 0;
     width: 100%;
-    height: 250%;
+    height: 300%;
     background-color: rgba(255,255,255,0.8);   
 }
 
@@ -117,10 +117,10 @@ li :hover {
 }
 
 #mainMessage{
-    padding: 25rem 6.5rem;
+    padding: 10rem 3.5rem;
     margin: 0rem 0;
     font-size: 3.4rem;
-    color: rgba(221, 217, 217, 0.9);
+    color: rgba(122, 117, 117, 0.9);
 }
 
 .product{
@@ -249,27 +249,71 @@ li :hover {
     float: right;
 }
 
-.show{
-    display: inline-block;
+.photo_right{
+    float:left;
+    width: 55%;
+}
+
+.cook_photo_right{
+    width: 100%; 
+    height: auto;  
+}
+
+.main_title{
+    margin: 0 auto;
     width: 100%;
+    height: 30%;
+    background-size: cover;
+    
+}
+
+.main_detail{
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    width: 100%;
+    
+    background-color: rgba(255,255,255,0.95);   
+}
+
+.title{
+    padding: 6rem 3.5rem;
+    margin: 0rem 0;
+    font-size: 2.4rem;
+    color: white;
+}
+
+.keireki{
+    padding: 1rem 1rem;
+    margin: 1rem 0;
+    
+}
+
+.keireki h2 {
+    width: 30%;
+    border-bottom: 2px solid rgb(241, 159, 64);
+}
+
+.show_blog{
+    display: inline-block;
+    width: 20%;
     text-align: center;
     font-size: 16px;
     color: rgb(241, 159, 64);
     text-decoration: none;
     font-weight: bold;
-    padding: 12px 0;
+    padding: 0 0;
     position: relative;
     border: 2px solid rgb(241, 159, 64);
     transition: .4s;
 }
 
-.show:hover {
+.show_blog:hover {
     border: 2px solid transparent;
     color: #FFF;
     background: rgb(241, 159, 64);
 }
 
-.show:before, .show:after {
+.show_blog:before, .show:after {
     width: 100%;
     height: 100%;
     z-index: 3;
@@ -282,29 +326,55 @@ li :hover {
     transition: .2s;
 }
 
-.show:before {
+.show_blog:before {
     border-bottom: 2px solid #FFF;
     border-left: 2px solid #FFF;
     transform-origin: 100% 0%;
 }
   
-.show:after {
+.show_blog:after {
     border-top: 2px solid #FFF;
     border-right: 2px solid #FFF;
     transform-origin: 0% 100%;
 }
   
-.show:hover:after,
-.show:hover:before {
+.show_blog:hover:after,
+.show_blog:hover:before {
     transform: scale(1);
 }
 
-.photo_right{
-    float:left;
-    width: 55%;
+.Blog{
+    padding: 1rem 1rem;
+   
 }
 
-.cook_photo_right{
-    width: 100%; 
-    height: auto;  
+.Blog h2{
+    width: 30%;
+    border-bottom: 2px solid rgb(241, 159, 64);
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article{
+    width:40%;
+    flex-basis:40%;
+    background-color: rgba(255, 165, 0, 0.1);
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
+    border: 1px solid rgba(241, 159, 64,0.5);
+    box-shadow:rgba(100, 99, 99, 0.51) 4px 4px 5px -4px;
+    float:left;
+}
+
+.article h2{
+    width: 100%;
+}
+
+footer {
+    width:100%;
+    background-color: orange;
+    text-align: center;
 }
