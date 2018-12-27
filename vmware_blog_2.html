@@ -1,0 +1,92 @@
+<html lang="ja">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta http-equiv="Content-Script-Type" content="text/javascript" />
+        <link rel="stylesheet" href="style/style.css">
+        <title>ML Blazer</title>
+    </head>
+    <body>
+        <div class="main_title">
+            
+            <header>
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="works.html">WORKS</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
+                    
+                </ul>
+                <div id="loginright">
+                    
+                    
+                </div>
+                <div class="delfloat"></div>
+            </header>
+            <div class="title">
+                VMware Blog
+            
+            </div>
+        </div>
+        <div class="main_detail">
+            <div class="Blog">
+                <h2>仮想マシンとは？？</h2>
+                <div class="blog_article">
+                    <h3>仮想マシンとは？</h3>
+                    <p>
+                        仮想マシンとは<br>
+                        仮想的に作り出されたハードウェア<br>
+                        のことです。<br>
+                        少々わかりにくい表現ですので言い換えます<br>
+                        <br>
+                        仮想マシンとは<br>
+                        <b>物理的に存在するように見えるソフトウェア</b><br>
+                        です。<br>
+                        <br>
+                        つまり実態はソフトなのに、動作上はハードとして扱われるマシンなのです。(ここに仮想という意味合いがありますね。)<br>
+                        <br>
+                        ここまで仮想マシンと説明してきましたが、便宜を図るため以下ではVM(Virtual Machine)と記載いたします。<br>
+                        
+                    </p>
+                    
+                    <h3>VMの動作</h3>
+                    <p>
+                        VMは物理マシンと同様に扱うことができます。<br>
+                        1つの物理サーバの上にVMは作成され動作します。<br>
+                        VMはOSインストール等、通常のPCと変わらず利用することができます。<br>
+                        VMのCPUやメモリは物理サーバのハードウェアを使用します。<br>
+                    </p>
+                    
+                    <h3>VMの実態</h3>
+                    <p>
+                        ここまでVMの意味的な部分を説明し実態はソフトウェアであると説明をいたしました。<br>
+                        もう少し掘り下げますと、VMの実態は以下のような拡張子を持った<b>ファイル</b>です。(以下はすべてではないです。)<br>
+                        ・vmdk　：　ディスクファイル<br>
+                        ・vmx　：　設定ファイル<br>
+                        ・nvram　：　BIOSファイル<br>
+                        ・vmsd　：　スナップショットファイル<br>
+                        ・vswp　：　スワップファイル<br>
+                        ・log　：　ログファイル<br>
+                        <br>
+                        1つ1つの詳細な説明はここでは控えますが、VMは上記のようなファイルとして実態を持つことを覚えておいてください。<br>
+                        <br>
+                        
+                    </p>
+                    <h3>まとめ</h3>
+                    <p>
+                        いかがでしたでしょうか。仮想マシンのイメージをつかむことはできましたか？<br>
+                        以下まとめです。<br>
+                        <br>
+                        <b>
+                            ・仮想マシンとは物理的に存在するように見えるソフトウェアである。<br>
+                            ・仮想マシンの実態はファイルである。
+                        </b>
+                        <br>
+                    </p>
+                </div>
+                <script type="text/javascript" src="./script.js" charset="utf-8"></script>
+            </div>
+            <div class="delfloat"></div>
+        </div>
+        <footer>© 2018-2019 All Rights Reserved.</footer>
+    </body>
+</html>

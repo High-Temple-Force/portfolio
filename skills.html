@@ -3,6 +3,7 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <meta http-equiv="Content-Script-Type" content="text/javascript" />
         <link rel="stylesheet" href="style/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <title>ML Blazer</title>
     </head>
     <body>
@@ -25,16 +26,50 @@
         </div>
         <div class="main_detail">
             <h2>保有スキルについてご紹介いたします。</h2>
+            <h3 class="subtitle">◆Language</h3>
             <div class="Skill">
                 <div class="skills">
-                    <h3>vSphereのインストール</h3>
-                    <p>vSphereをGCPインスタンスにインストールしてみました。</p>
-                    <a class="show" >
-                        show detail
-                    </a>
+                    <h3>python</h3>
+                    <img src="image/python.png"/>
+                    <p class="hide_text">pythonを使用した機械学習、機械学習のためのデータ収集(スクレイピング)を行いました。</p>
                 </div>
-                <script type="text/javascript" src="./script.js" charset="utf-8"></script>
+                <div class="skills">
+                    <h3>JavaScript</h3>
+                    <img src="image/javascript_1.png"/>
+                    <p class="hide_text">サイト作成にjavascriptを使用しております。</p>
+                </div>
+                <div class="skills">
+                    <h3>php</h3>
+                    <img src="image/php.png"/>
+                    <p class="hide_text">WEBアプリ作成時のデータベースとの連携やセッション管理に使用しております。</p>
+                </div>
+                <div class="skills">
+                    <h3>HTML&CSS</h3>
+                    <img src="image/html5.png"/>
+                    <p class="hide_text">HTMLとCSSを使用しております。</p>
+                </div>
+                
             </div>
+            <h3 class="subtitle">◆Platform</h3>
+            <div class="Skill">
+                <div class="skills">
+                    <h3>GCP</h3>
+                    <img src="image/google-cloud-platform.png"/>
+                    <p class="hide_text">GCPのIaaSやSaaSの使用経験があります。</p>
+                </div>
+                <div class="skills">
+                    <h3>MySQL</h3>
+                    <img src="image/mysql.png"/>
+                    <p class="hide_text">WEBアプリケーション作成時にユーザデータ等の管理としてMySQLを利用しました。また論理設計の経験もあります。</p>
+                </div>
+                <div class="skills">
+                    <h3>Node.js</h3>
+                    <img src="image/python.png"/>
+                    <p class="hide_text">チャットツールを作成した際にNode.jsのwebsocket.ioを使用しました。</p>
+                </div>
+            </div>
+                <script type="text/javascript" src="./script.js" charset="utf-8"></script>
+            
             <div class="delfloat"></div>
         </div>
         <footer>© 2018-2019 All Rights Reserved.</footer>
