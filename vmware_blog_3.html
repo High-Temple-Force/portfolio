@@ -1,0 +1,84 @@
+<html lang="ja">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta http-equiv="Content-Script-Type" content="text/javascript" />
+        <link rel="stylesheet" href="style/style.css">
+        <title>ML Blazer</title>
+    </head>
+    <body>
+        <div class="main_title">
+            
+            <header>
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="works.html">WORKS</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
+                    
+                </ul>
+                <div id="loginright">
+                    
+                    
+                </div>
+                <div class="delfloat"></div>
+            </header>
+            <div class="title">
+                VMware Blog
+            
+            </div>
+        </div>
+        <div class="main_detail">
+            <div class="Blog">
+                <h2>仮想マシンのvMotion</h2>
+                <div class="blog_article">
+                    <h3>vMotionとは？</h3>
+                    <p>
+                        vMotionとは<br>
+                        <b>動作している仮想マシン(以下、VM)を停止させることなく、他の物理サーバに移動させる機能</b><br>
+                        のことです。<br>
+                        <br>
+                        これは非常に便利な機能なのです。<br>
+                        私の意見ですが、運用の現場には欠かせない素晴らしい機能なのです。<br>
+                        <br>
+                        vMotionが可能ですと、VMの稼働している物理サーバのメンテナンスに<br>
+                        VMを停止することなく、つまりユーザが利用をし続けながらメンテナンスを実施することが可能になります。<br>
+                        <br>
+                        仮想化という概念がない場合、サーバと止めるとなると、そのサーバに冗長構成が取られていない場合は、<br>
+                        メンテナンス日時をユーザに周知し、夜間など利用頻度が少ない時間にメンテナンスを実施していました。<br>
+                        しかしながら、仮想化という概念がうまれ、vMotionが可能になりますと、<b>昼夜気にすることなくメンテナンスが可能</b>になるのです。<br>
+                    </p>
+                    <h3>vMotionの種類</h3>
+                    <p>
+                        一言にvMotionと言いましても、いろいろな種類があります。<br>
+                        <br>
+                        <b>●vMotion</b><br>
+                        稼働しているVMを他の物理サーバへ移動させる際に使用する。<br>
+                        <br>
+                        <b>●ストレージvMotion</b><br>
+                        VMのストレージを変更するvMotion。物理サーバの変更はないが、ストレージを変更する。<br>
+                        <br>
+                        <b>●コールド移行</b><br>
+                        停止しているVMを他の物理サーバへ移動させる際に使用する。<br>
+                        <br>
+                        <b>●シェアードナッシング</b><br>
+                        vMotionとストレージvMotionを同時に行うvMotion。<br>
+                        つまり稼働している物理サーバを変更しつつ、ストレージも変更するvMotion。<br>
+                        <br>
+                        <b>●vCenter間のvMotion</b><br>
+                        その名通りvCenter間でVMを移動させるためのvMotion。<br>
+                        ※vCenterとは簡単にいうと、VMや物理サーバを管理するサーバのこと。<br>
+                        <br>
+                        <b>●Long Distance vMotion </b><br>
+                        地理的に遠く離れたVM同士を移動するためのvMotion。<br>
+                        vCenter間のvMotionの拡張機能である。<br>
+                        <br>
+                    </p>
+                    
+                </div>
+                <script type="text/javascript" src="./script.js" charset="utf-8"></script>
+            </div>
+            <div class="delfloat"></div>
+        </div>
+        <footer>© 2018-2019 All Rights Reserved.</footer>
+    </body>
+</html>
