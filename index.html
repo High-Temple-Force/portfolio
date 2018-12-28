@@ -3,30 +3,44 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <meta http-equiv="Content-Script-Type" content="text/javascript" />
         <link rel="stylesheet" href="style/style.css">
+        <script type="text/javascript"
+         src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
         <title>ML Blazer</title>
     </head>
     <body>
 
-            <header>
-                <ul>
-                    <li><a href="index.html">TOP</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="works.html">WORKS</a></li>
-                    <li><a href="skills.html">SKILLS</a></li>
-                    
-                </ul>
-                <div id="loginright">
-                    
-                    
-                </div>
-                <div class="delfloat"></div>
-            </header>
-            <div id="container">
-                <div id="l2">
-                <p id="mainMessage">Make <br>Awesome <br>Things</p>
-                
-                </div>
-            </div>
+        <header>
+            <ul>
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="works.html">WORKS</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
 
+            </ul>
+            <div id="loginright">
+
+
+            </div>
+            <div class="delfloat"></div>
+        </header>
+        <div id="container">
+            <div id="l2">
+                <p id="mainMessage">Make <br>Awesome <br>Things</p>
+            </div>
+            <div id="l3">
+                <div id="Message">
+                    <p id="Message1">Portfolio</p>
+                    <p id="Message2">Presented By</p>
+                    <p id="Message3">Aoki Takuto</p>
+                </div>
+                <script>
+                    $(function() {
+                      $('#Message1').hide().fadeIn(1000);
+                      $('#Message2').hide().fadeIn(2000);
+                      $('#Message3').hide().fadeIn(3000);
+                    });
+        </script>
+            </div>
+        </div>
     </body>
 </html>
