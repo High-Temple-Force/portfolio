@@ -1,0 +1,85 @@
+<html lang="ja">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta http-equiv="Content-Script-Type" content="text/javascript" />
+        <link rel="stylesheet" href="../style/style.css">
+        <title>ML Blazer</title>
+    </head>
+    <body>
+        <div class="main_title">
+            
+            <header>
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="works.html">WORKS</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
+                    
+                </ul>
+                <div id="loginright">
+                    
+                    
+                </div>
+                <div class="delfloat"></div>
+            </header>
+            <div class="title">
+                VMware Blog
+            
+            </div>
+        </div>
+        <div class="main_detail">
+            <div class="Blog">
+                <h2>vSphere HAとは？</h2>
+                <div class="blog_article">
+                    <h3>vSphere HA</h3>
+                    <p>
+                        ITインフラの世界では冗長化構成というのが非常に大事です。<br>
+                        冗長化とはシステム障害時にそのシステムのダウンタイムを縮小するため、またはなくすために<br>
+                        あらかじめ予備を準備しておくことです。<br>
+                        <br>
+                        <b>vSphere HAは物理サーバ障害時に、仮想マシンを別の物理サーバに移動させ、再稼働させる機能です。</b><br>
+                        <br>
+                    </p>
+                    
+                    <h3>vSphere HAの仕組み</h3>
+                    <p>
+                        vSphere HAを利用するには物理サーバをクラスタ構成にする必要があります。<br>
+                        クラスタ構成とは複数のサーバをグループ化することです。<br>
+                        <br>
+                        vSphere HAはこのクラスタ内で実現可能です。<br>
+                        クラスタでHAを設定すると物理サーバは以下の種類に分けられます。<br>
+                        <br>
+                        ・マスターサーバ<br>
+                        ・スレーブサーバ
+                        <br>
+                        <br>
+                        マスターサーバはクラスタにつき1台です。マスターサーバからスレーブサーバ間でハートビートを送り合います。<br>
+                        この際ハートビートが途切れた際にはvSphere HAの機能により仮想マシンをクラスタ内の他のサーバへ移動させます。<br>
+                        <br>
+                    </p>
+                    
+                    <h3>アドミッションコントロールについて</h3>
+                    <p>
+                        vSphere HAにはアドミッションコントロールというオプションが存在します。<br>
+                        アドミッションコントロールとはフェイルオーバ用にクラスタ内でどれくらいのリソースを残しておくか？というものです。<br>
+                        <br>
+                        アドミッションコントロールの種類には以下の3種類があります。<br>
+                        ・台数を指定<br>
+                        　1台であれば1台分のリソースを残す。<br>
+                        <br>
+                        ・CPU/メモリ毎に割合を指定<br>
+                        　台数ではなくクラスタ内のリソースを割合で確保する。<br>
+                        <br>
+                        ・フェイルオーバーホストの指定<br>
+                        　専用のホストを指定して残しておく<br>
+                        <br>
+                        <br>   
+                    </p>
+                </div>
+                <script type="text/javascript" src="./script.js" charset="utf-8"></script>
+            </div>
+            <div class="delfloat"></div>
+        </div>
+        <footer>© 2018-2019 All Rights Reserved.</footer>
+    </body>
+</html>
